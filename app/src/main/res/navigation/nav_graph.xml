@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/todoFragment2">
+    <fragment
+        android:id="@+id/todoFragment2"
+        android:name="com.example.loginassignmment.ui.TodoFragment"
+        android:label="TodoFragment" >
+        <action
+            android:id="@+id/action_todoFragment2_to_addTodoFragment"
+            app:destination="@id/addTodoFragment" />
+        <action
+            android:id="@+id/action_todoFragment2_to_updateTodoFragment"
+            app:destination="@id/updateTodoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addTodoFragment"
+        android:name="com.example.loginassignmment.ui.AddTodoFragment"
+        android:label="AddTodoFragment" />
+    <fragment
+        android:id="@+id/updateTodoFragment"
+        android:name="com.example.loginassignmment.ui.UpdateTodoFragment"
+        android:label="UpdateTodoFragment" >
+        <argument
+            android:name="todo"
+            app:argType="com.example.loginassignmment.data.TodoItem" />
+    </fragment>
+</navigation>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LoginAssignmment</string>
+    <string name="not_have_account_signup">Not have account? <b>SignUp</b></string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="login_to_your_account">Login to your account</string>
+
+</resources>
